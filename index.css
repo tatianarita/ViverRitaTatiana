@@ -69,7 +69,7 @@ main { width: 100%;
     -ms-transition:;
     -o-transition:;
 }
-{display: grid;
+.productos {display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10vw 10vw 1fr;
     grid-template-areas: "prod prod"
