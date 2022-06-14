@@ -1,0 +1,187 @@
+*{margin: 0%;
+    padding: 0%;}
+body {background-image: url(./imagenes/fotosuculenta.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Luxurious Roman', cursive;}
+h1 {font-size: 50px;
+    color: rgba(0, 8, 8, 0.993);
+    padding: 1rem;
+    margin-top: 2rem;}
+.slogan__logo {width: 130px;
+    padding: 2rem;}
+.slogan__name--frase {color: rgb(81, 170, 8); 
+    font-size: 19px;
+    font-style: italic;
+    padding: 1rem;}
+.texto {text-align: left;
+    font-size: 20px;
+    width: 50%;
+    height: 20rem;
+    padding: 1rem;
+    color: rgb(14, 150, 32);
+    grid-area: texto;}
+nav {display: flex;
+    flex-direction:row;
+    justify-content: space-between;}
+.slogan {display: flex;
+    flex-direction: row;
+    justify-content: center}
+.slogan__name {display: flex;
+    flex-direction: column;
+    justify-content: center;}
+ul li {display: inline;}
+ul {margin-top: 8rem;}
+a {text-decoration: none;
+    font-size: 20px;
+    color: rgb(51, 182, 25);
+    margin: 3px;
+    padding: 2px;
+    border: 2px solid white;}
+main { width: 100%;
+    height: fit-content;}
+.ppal {display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15vw 1fr;
+    grid-template-areas: 
+    "texto none"
+    "fotocactus none";}
+.fotocactus{grid-area: fotocactus;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    object-fit: cover;}
+.productos {display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vw 10vw 1fr;
+    grid-template-areas: "prod prod"
+    "tipo1 tipo2"
+    "fototipo1 fototipo2";
+    grid-gap: 1rem;
+    align-items: center;
+    justify-items: center;}
+.prod {grid-area: prod;}
+.tipo1 {grid-area: tipo1;
+    font-size: 20px;
+    background-color: beige;
+    padding: 2rem;}
+.tipo2 {grid-area: tipo2;
+    font-size: 20px;
+    background-color: beige;
+    padding: 2rem;}
+.fototipo1 {grid-area: fototipo1;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    object-fit: cover;}
+.fototipo2 {grid-area: fototipo2;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    object-fit: cover;}
+footer {font-size: 10 px;
+    color: rgb(65, 88, 22);
+    margin: 30px;
+    width: 50%;}
+.formulario, .plantas, .nosotros, .productos {padding: 2rem;
+    color: rgb(116, 233, 70);}
+/* MEDIA QUERIES */
+@media screen and (max-width:950px){
+    body {background-color: rgb(230, 230, 233);}
+    nav {display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;}
+    ul li {display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;}
+    ul {display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;}
+    .ppal {display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vw 1fr;
+        grid-template-areas: 
+        "texto"
+        "fotocactus";}
+    .texto {display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        padding: 1rem;
+        color: rgb(14, 150, 32);
+        grid-area: texto;
+        height: auto;
+        width: fit-content;
+        background-color: beige;}
+    .textofooter {display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 10 px;
+        color: rgb(65, 88, 22);}
+    footer {margin: auto;
+        width: auto;}
+    .fotocactus{grid-area: fotocactus;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        object-fit: scale-down;}
+}
+@media screen and (max-width:490px){
+    body {background-color: #c4e79670;
+    background-image: none}
+    nav {display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;}
+    .slogan {display: flex;
+        flex-direction: column;
+        justify-content: center}
+    .ppal {display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40vw 50vw;
+        grid-template-areas: 
+        "texto"
+        "fotocactus";}
+    .texto {display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        font-size: 20px;
+        padding: 1rem;
+        color: rgb(14, 150, 32);
+        grid-area: texto;} 
+    h1 {display: none;}  
+    a {text-decoration: none;
+        font-size: 20px;
+        color: rgb(51, 182, 25);
+        margin: 3px;
+        padding: 2px;
+        border: 2px solid white;
+        background-color: white;}
+    .productos {display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vw 10vw 1fr 10vw 1fr;
+        grid-template-areas: "prod" 
+        "tipo1" 
+        "fototipo1" 
+        "tipo2"
+        "fototipo2";
+        grid-gap: 1rem;
+        align-items: center;
+        justify-items: center;}
+    .textofooter {display: none;}
+}
