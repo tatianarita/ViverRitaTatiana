@@ -63,12 +63,7 @@ main { width: 100%;
     -moz-transform:scale(1.1);
     -ms-transform:scale(1.1);
     -o-transform:scale(1.1);
-    transition-duration: 1.2s;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
-}
+    transition-duration: 1.2s;}
 .productos {display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10vw 10vw 1fr;
@@ -81,11 +76,11 @@ main { width: 100%;
 .prod {grid-area: prod;}
 .tipo1 {grid-area: tipo1;
     font-size: 20px;
-    background-color: beige;
+    background-image: linear-gradient(white 70%,rgb(153, 233, 153));
     padding: 2rem;}
 .tipo2 {grid-area: tipo2;
     font-size: 20px;
-    background-color: beige;
+    background-image: linear-gradient(white 70%,rgb(153, 233, 153));
     padding: 2rem;}
 .fototipo1 {
     grid-area: fototipo1;
