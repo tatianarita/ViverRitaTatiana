@@ -40,6 +40,10 @@ a {text-decoration: none;
     margin: 3px;
     padding: 2px;
     border: 2px solid white;}
+a:hover{ background-image: linear-gradient(rgb(28, 196, 28), rgb(160, 241, 113));
+    color: white;
+    transition-duration: 1.5s;
+    border: 2px solid rgb(240, 245, 175);}
 main { width: 100%;
     height: fit-content;}
 .ppal {display: grid;
@@ -53,7 +57,19 @@ main { width: 100%;
     height: 100%;
     align-items: center;
     object-fit: cover;}
-.productos {display: grid;
+.fotocactus:hover {
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transition-duration: 1.2s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}
+{display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10vw 10vw 1fr;
     grid-template-areas: "prod prod"
@@ -202,5 +218,3 @@ footer {font-size: 10 px;
         justify-items: center;}
     .textofooter {display: none;}
 }
-.img6{
-    
