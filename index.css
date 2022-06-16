@@ -9,20 +9,21 @@ body {background-image: url(./imagenes/fotosuculenta.jpg);
 h1 {font-size: 50px;
     color: rgba(0, 8, 8, 0.993);
     padding: 1rem;
-    margin-top: 2rem;}
+    margin-top: 2rem;
+    font-weight: bold;
+    margin-bottom: 0}
 .slogan__logo {width: 130px;
-    padding: 2rem;}
+    padding: 2rem;
+    box-sizing: unset;}
 .slogan__name--frase {color: rgb(81, 170, 8); 
     font-size: 19px;
     font-style: italic;
-    padding: 1rem;}
-.texto {text-align: left;
-    font-size: 20px;
-    width: 50%;
-    height: 20rem;
     padding: 1rem;
+    font-weight: bold;}
+.texto {
+    font-size: 22px;
     color: rgb(14, 150, 32);
-    grid-area: texto;}
+    text-align: left;}
 nav {display: flex;
     flex-direction:row;
     justify-content: space-between;}
@@ -46,13 +47,34 @@ a:hover{ background-image: linear-gradient(rgb(28, 196, 28), rgb(160, 241, 113))
     border: 2px solid rgb(240, 245, 175);}
 main { width: 100%;
     height: fit-content;}
-.ppal {display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15vw 1fr;
+#ppal {display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 600px;
     grid-template-areas: 
-    "texto none"
-    "fotocactus none";}
-.fotocactus{grid-area: fotocactus;
+    "divtexto divtexto . ."
+    ". divcactus divcactus .";}
+
+.divtexto{
+    grid-area: divtexto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.divcactus{
+    grid-area: divcactus;
+   
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+.fotocactus{
     width: 100%;
     height: 100%;
     align-items: center;
@@ -115,6 +137,11 @@ footer {font-size: 10 px;
     width: 50%;}
 .formulario, .plantas, .nosotros, .productos {padding: 2rem;
     color: rgb(116, 233, 70);}
+.plantas {display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;}
 /* MEDIA QUERIES */
 @media screen and (max-width:950px){
     body {background-color: rgb(230, 230, 233);}
