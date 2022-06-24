@@ -1,0 +1,48 @@
+*{margin: 0%;
+    padding: 0%;}
+body {background-image: url(./imagenes/fotosuculenta.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Luxurious Roman', cursive;
+    nav {display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        .slogan {display: flex;
+        flex-direction: row;
+        justify-content: center}
+        .slogan__logo {width: 130px;
+        padding: 2rem;
+        box-sizing: unset;}
+        .slogan__name {display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {font-size: 50px;
+        color: rgba(0, 8, 8, 0.993);
+        padding: 1rem;
+        margin-top: 2rem;
+        font-weight: bold;
+        margin-bottom: 0}
+        .slogan__name--frase {color: rgb(81, 170, 8); 
+        font-size: 19px;
+        font-style: italic;
+        padding: 1rem;
+        font-weight: bold;}}
+    ul {margin-top: 8rem;} 
+    ul li {display: inline;
+        a {text-decoration: none;
+            font-size: 20px;
+            color: rgb(51, 182, 25);
+            margin: 3px;
+            padding: 2px;
+            border: 2px solid white;}
+        a:hover{ background-image: linear-gradient(rgb(28, 196, 28), rgb(160, 241, 113));
+            color: white;
+            transition-duration: 1.5s;
+            border: 2px solid rgb(240, 245, 175);}}}
+    }
+
+   
+    
+    

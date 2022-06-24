@@ -1,0 +1,57 @@
+/* PARTIALS */
+* {
+  margin: 0%;
+  padding: 0%; }
+
+body {
+  background-image: url(./imagenes/fotosuculenta.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Luxurious Roman', cursive; }
+  body nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    body nav .slogan {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+    body nav .slogan__logo {
+      width: 130px;
+      padding: 2rem;
+      box-sizing: unset; }
+    body nav .slogan__name {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body nav .slogan__name h1 {
+        font-size: 50px;
+        color: rgba(0, 8, 8, 0.993);
+        padding: 1rem;
+        margin-top: 2rem;
+        font-weight: bold;
+        margin-bottom: 0; }
+      body nav .slogan__name .slogan__name--frase {
+        color: #51aa08;
+        font-size: 19px;
+        font-style: italic;
+        padding: 1rem;
+        font-weight: bold; }
+    body nav ul {
+      margin-top: 8rem; }
+    body nav ul li {
+      display: inline; }
+      body nav ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #33b619;
+        margin: 3px;
+        padding: 2px;
+        border: 2px solid white; }
+      body nav ul li a:hover {
+        background-image: linear-gradient(#1cc41c, #a0f171);
+        color: white;
+        transition-duration: 1.5s;
+        border: 2px solid #f0f5af; }
