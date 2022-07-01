@@ -1,3 +1,22 @@
+/* MISC */
+* {
+  margin: 0%;
+  padding: 0%; }
+
+/* SPACINGS*/
+/* FONT FAMILY */
+/* FONT SIZES*/
+/* FONT SIZES*/
+.text-large {
+  font-size: 50px; }
+
+.text-base {
+  font-size: 19px; }
+
+.text-small {
+  font-size: 10px; }
+
+/*COLORS*/
 /* PARTIALS */
 * {
   margin: 0%;
@@ -9,7 +28,7 @@ body {
   background-size: 100%;
   background-attachment: fixed;
   background-position: center;
-  font-family: 'Luxurious Roman', cursive; }
+  font-family: "Luxurious Roman", cursive; }
   body nav {
     display: flex;
     flex-direction: row;
@@ -27,15 +46,13 @@ body {
       flex-direction: column;
       justify-content: center; }
       body nav .slogan__name h1 {
-        font-size: 50px;
-        color: rgba(0, 8, 8, 0.993);
+        color: rgba(0, 8, 8, 0.992);
         padding: 1rem;
         margin-top: 2rem;
         font-weight: bold;
         margin-bottom: 0; }
       body nav .slogan__name .slogan__name--frase {
         color: #51aa08;
-        font-size: 19px;
         font-style: italic;
         padding: 1rem;
         font-weight: bold; }
@@ -45,13 +62,82 @@ body {
       display: inline; }
       body nav ul li a {
         text-decoration: none;
-        font-size: 20px;
         color: #33b619;
         margin: 3px;
-        padding: 2px;
+        padding: 1rem;
         border: 2px solid white; }
       body nav ul li a:hover {
         background-image: linear-gradient(#1cc41c, #a0f171);
         color: white;
         transition-duration: 1.5s;
         border: 2px solid #f0f5af; }
+
+footer {
+  color: #415816;
+  margin: 30px;
+  width: 50%; }
+
+/* VIEWS */
+main {
+  width: 100%;
+  height: fit-content; }
+
+#ppal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 150px 600px;
+  grid-template-areas: "divtexto divtexto . ." ". divcactus divcactus ."; }
+  #ppal .divtexto {
+    grid-area: divtexto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    #ppal .divtexto .texto {
+      font-size: 22px;
+      color: #0e9620;
+      text-align: left; }
+  #ppal .divcactus {
+    grid-area: divcactus; }
+
+.plantas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center; }
+
+.productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10vw 10vw 1fr;
+  grid-template-areas: "prod prod" "tipo1 tipo2" "fototipo1 fototipo2";
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: center; }
+  .productos .prod {
+    grid-area: prod; }
+  .productos .tipo1 {
+    grid-area: tipo1;
+    font-size: 20px;
+    background-image: linear-gradient(white 70%, #99e999);
+    padding: 2rem; }
+  .productos .fototipo1, .productos .fototipo2 {
+    grid-area: fototipo1;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    object-fit: cover;
+    filter: blur(5px) grayscale(90%);
+    -webkit-filter: blur(5px) grayscale(90%); }
+    .productos .fototipo1:hover, .productos .fototipo2:hover {
+      transition-duration: 1.5s;
+      filter: blur(0px) grayscale(0%);
+      -webkit-filter: blur(0px) grayscale(0%); }
+  .productos .tipo2 {
+    grid-area: tipo2;
+    font-size: 20px;
+    background-image: linear-gradient(white 70%, #99e999);
+    padding: 2rem; }
+  .productos .fototipo2 {
+    grid-area: fototipo2; }

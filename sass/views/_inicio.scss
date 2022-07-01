@@ -1,0 +1,22 @@
+
+main { width: 100%;
+    height: fit-content;}
+#ppal {display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 600px;
+    grid-template-areas: 
+    "divtexto divtexto . ."
+    ". divcactus divcactus .";
+    .divtexto{
+    grid-area: divtexto;
+    @include flex(wrap, center, center);
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+        .texto {
+            font-size: 22px;
+            color: rgb(14, 150, 32);
+            text-align: left;}}
+    .divcactus{
+    grid-area: divcactus;}}

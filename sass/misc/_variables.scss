@@ -1,0 +1,36 @@
+/* SPACINGS*/
+$spacing-large: 6rem;
+$spacing-medium: 2rem;
+$spacing-small: 1rem;
+
+// .formulario, .plantas, .nosotros, .productos {padding: 2rem;
+    // color: rgb(116, 233, 70);}
+
+/* FONT FAMILY */
+$font-principal: 'Luxurious Roman', cursive;
+$font-title: 'cormorant garamond';
+
+/* FONT SIZES*/
+$text-large: 50px;
+$text-base: 19px;
+$text-small: 10px;
+
+
+/* FONT SIZES*/
+$font-sizes: (
+text-large: 50px,
+text-base: 19px,
+text-small: 10px,);
+@each $key, $val in $font-sizes {
+    .#{$key} {
+        font-size: #{$val};
+    }
+}
+
+/*COLORS*/
+$primary:rgba(0, 8, 8, 0.992);
+$secondary: rgb(51, 182, 25);
+$alternative: rgb(65, 88, 22);
+$text-color: rgb(81, 170, 8);
+$base: rgb(255, 255, 255);
+$border: rgb(240, 245, 175);
