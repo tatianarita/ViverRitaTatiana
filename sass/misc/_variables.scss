@@ -12,6 +12,7 @@ $font-title: 'cormorant garamond';
 
 /* FONT SIZES*/
 $text-large: 50px;
+$text-title: 28px;
 $text-base: 19px;
 $text-small: 10px;
 
@@ -19,6 +20,7 @@ $text-small: 10px;
 /* FONT SIZES*/
 $font-sizes: (
 text-large: 50px,
+text-title: 28px,
 text-base: 19px,
 text-small: 10px,);
 @each $key, $val in $font-sizes {

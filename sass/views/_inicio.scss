@@ -1,6 +1,7 @@
 
 main { width: 100%;
-    height: fit-content;}
+    height: fit-content;
+    padding: $spacing-medium;}
 #ppal {display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 150px 600px;
@@ -10,13 +11,13 @@ main { width: 100%;
     .divtexto{
     grid-area: divtexto;
     @include flex(wrap, center, center);
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: center;
-    // align-items: center;
         .texto {
             font-size: 22px;
-            color: rgb(14, 150, 32);
+            color: $secondary;
             text-align: left;}}
     .divcactus{
     grid-area: divcactus;}}
+.footerindex {font-size: map-get($font-sizes, $text-small);
+    color: $alternative;
+    margin: 30px;
+    width: 50%;}

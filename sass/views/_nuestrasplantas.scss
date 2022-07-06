@@ -2,4 +2,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: center;}
+    align-content: center;
+    padding: $spacing-medium;
+    color: $secondary;}
+h2 {padding: $spacing-medium;
+font-size: map-get($font-sizes, $text-base);
+color: $secondary;
+text-decoration: bold;}

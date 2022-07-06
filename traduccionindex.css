@@ -10,6 +10,9 @@
 .text-large {
   font-size: 50px; }
 
+.text-title {
+  font-size: 28px; }
+
 .text-base {
   font-size: 19px; }
 
@@ -80,7 +83,8 @@ footer {
 /* VIEWS */
 main {
   width: 100%;
-  height: fit-content; }
+  height: fit-content;
+  padding: 2rem; }
 
 #ppal {
   display: grid;
@@ -95,17 +99,36 @@ main {
     align-items: center; }
     #ppal .divtexto .texto {
       font-size: 22px;
-      color: #0e9620;
+      color: #33b619;
       text-align: left; }
   #ppal .divcactus {
     grid-area: divcactus; }
+
+.footerindex {
+  color: #415816;
+  margin: 30px;
+  width: 50%; }
+
+.nosotros {
+  padding: 2rem;
+  color: #33b619; }
 
 .plantas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: center; }
+  align-content: center;
+  padding: 2rem;
+  color: #33b619; }
+
+h2 {
+  padding: 2rem;
+  color: #33b619;
+  text-decoration: bold; }
+
+main {
+  font-weight: 0; }
 
 .productos {
   display: grid;
@@ -115,11 +138,13 @@ main {
   grid-gap: 1rem;
   align-items: center;
   justify-items: center; }
+  .productos h2 {
+    padding: 2rem;
+    color: #33b619; }
   .productos .prod {
     grid-area: prod; }
   .productos .tipo1 {
     grid-area: tipo1;
-    font-size: 20px;
     background-image: linear-gradient(white 70%, #99e999);
     padding: 2rem; }
   .productos .fototipo1, .productos .fototipo2 {
@@ -136,8 +161,11 @@ main {
       -webkit-filter: blur(0px) grayscale(0%); }
   .productos .tipo2 {
     grid-area: tipo2;
-    font-size: 20px;
     background-image: linear-gradient(white 70%, #99e999);
     padding: 2rem; }
   .productos .fototipo2 {
     grid-area: fototipo2; }
+
+.formulario {
+  padding: 2rem;
+  color: #33b619; }
