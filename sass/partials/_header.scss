@@ -1,46 +1,38 @@
-*{margin: 0%;
-    padding: 0%;}
-body {background-image: url(./imagenes/fotosuculenta.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    font-family: $font-principal;
-    nav {display: flex;
-        flex-direction:row;
-        justify-content: space-between;
-        .slogan {display: flex;
-        flex-direction: row;
-        justify-content: center}
+nav {display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    .slogan {display: flex;
+    flex-direction: row;
+    justify-content: center;
         .slogan__logo {width: 130px;
         padding: $spacing-medium;
         box-sizing: unset;}
         .slogan__name {display: flex;
         flex-direction: column;
         justify-content: center;
-        h1 {color: $primary;
-        padding: $spacing-small;
-        margin-top: $spacing-medium;
-        font-weight: bold;
-        margin-bottom: 0}
-        .slogan__name--frase {color: $text-color; 
-        font-size: map-get($font-sizes, $text-small);
-        font-style: italic;
-        padding: $spacing-small;
-        font-weight: bold;}}
-    ul {margin-top: 8rem;} 
-    ul li {display: inline;
-        a {text-decoration: none;
-            font-size: map-get($font-sizes, $text-base);
-            color: $secondary;
-            margin: 3px;
+            h1 {color: $primary;
             padding: $spacing-small;
-            border: 2px solid $base;}
-        a:hover{ background-image: linear-gradient(rgb(28, 196, 28), rgb(160, 241, 113));
-            color: $base;
-            transition-duration: 1.5s;
-            border: 2px solid $border;}}}
+            margin-top: $spacing-medium;
+            font-weight: bold;
+            margin-bottom: 0}
+            .slogan__name--frase {color: $text-color; 
+            font-size: map-get($font-sizes, $text-small);
+            font-style: italic;
+            padding: $spacing-small;
+            font-weight: bold;}}
     }
+ul {margin-top: 8rem;} 
+ul li {display: inline;
+    a {text-decoration: none;
+        font-size: map-get($font-sizes, $text-base);
+        color: $secondary;
+        margin: 3px;
+        padding: $spacing-small;
+        border: 2px solid $base;}
+    a:hover{ background-image: linear-gradient(rgb(28, 196, 28), rgb(160, 241, 113));
+        color: $base;
+        transition-duration: 1.5s;
+        border: 2px solid $border;}}}
 
    
     

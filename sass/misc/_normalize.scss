@@ -1,2 +1,11 @@
 *{margin: 0%;
     padding: 0%;}
+/*Fondo y fuente*/ 
+body {background-image: url(./imagenes/fotosuculenta.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: $font-principal;}
+/*Títulos págs*/ 
+h3 {color: $text-color;}

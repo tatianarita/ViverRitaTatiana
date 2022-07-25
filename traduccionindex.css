@@ -1,8 +1,5 @@
+@charset "UTF-8";
 /* MISC */
-* {
-  margin: 0%;
-  padding: 0%; }
-
 /* SPACINGS*/
 /* FONT FAMILY */
 /* FONT SIZES*/
@@ -20,11 +17,11 @@
   font-size: 10px; }
 
 /*COLORS*/
-/* PARTIALS */
 * {
   margin: 0%;
   padding: 0%; }
 
+/*Fondo y fuente*/
 body {
   background-image: url(./imagenes/fotosuculenta.jpg);
   background-repeat: no-repeat;
@@ -32,53 +29,107 @@ body {
   background-attachment: fixed;
   background-position: center;
   font-family: "Luxurious Roman", cursive; }
-  body nav {
+
+/*Títulos págs*/
+h3 {
+  color: #51aa08; }
+
+/*PARTIALS*/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  nav .slogan {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
-    body nav .slogan {
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-    body nav .slogan__logo {
+    justify-content: center; }
+    nav .slogan .slogan__logo {
       width: 130px;
       padding: 2rem;
       box-sizing: unset; }
-    body nav .slogan__name {
+    nav .slogan .slogan__name {
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      body nav .slogan__name h1 {
+      nav .slogan .slogan__name h1 {
         color: rgba(0, 8, 8, 0.992);
         padding: 1rem;
         margin-top: 2rem;
         font-weight: bold;
         margin-bottom: 0; }
-      body nav .slogan__name .slogan__name--frase {
+      nav .slogan .slogan__name .slogan__name--frase {
         color: #51aa08;
         font-style: italic;
         padding: 1rem;
         font-weight: bold; }
-    body nav ul {
-      margin-top: 8rem; }
-    body nav ul li {
-      display: inline; }
-      body nav ul li a {
-        text-decoration: none;
-        color: #33b619;
-        margin: 3px;
-        padding: 1rem;
-        border: 2px solid white; }
-      body nav ul li a:hover {
-        background-image: linear-gradient(#1cc41c, #a0f171);
-        color: white;
-        transition-duration: 1.5s;
-        border: 2px solid #f0f5af; }
+  nav ul {
+    margin-top: 8rem; }
+  nav ul li {
+    display: inline; }
+    nav ul li a {
+      text-decoration: none;
+      color: #33b619;
+      margin: 3px;
+      padding: 1rem;
+      border: 2px solid white; }
+    nav ul li a:hover {
+      background-image: linear-gradient(#1cc41c, #a0f171);
+      color: white;
+      transition-duration: 1.5s;
+      border: 2px solid #f0f5af; }
 
-footer {
-  color: #415816;
-  margin: 30px;
-  width: 50%; }
+.redes {
+  width: 400px;
+  margin: 0 20px; }
+
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block; }
+
+.ease-all {
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out; }
+
+/* Social Icons */
+.social {
+  height: 4.5rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+.social li a {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  text-align: center;
+  padding-top: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  /*background-color*/
+  -webkit-box-shadow: inset 0 0 0 40px #33b619;
+  -moz-box-shadow: inset 0 0 0 40px #33b619;
+  -o-box-shadow: inset 0 0 0 40px #33b619;
+  -ms-box-shadow: inset 0 0 0 40px #33b619;
+  box-shadow: inset 0 0 0 40px #33b619;
+  color: #fff; }
+
+.social li a:hover {
+  -webkit-box-shadow: inset 0 0 0 3px #33b619;
+  -moz-box-shadow: inset 0 0 0 3px #33b619;
+  -o-box-shadow: inset 0 0 0 3px #33b619;
+  -ms-box-shadow: inset 0 0 0 3px #33b619;
+  box-shadow: inset 0 0 0 3px #33b619;
+  color: #33b619; }
 
 /* VIEWS */
 main {
@@ -89,11 +140,12 @@ main {
 #ppal {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 150px 600px;
+  grid-template-rows: 150px 500px;
   grid-template-areas: "divtexto divtexto . ." ". divcactus divcactus ."; }
   #ppal .divtexto {
     grid-area: divtexto;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
@@ -104,61 +156,38 @@ main {
   #ppal .divcactus {
     grid-area: divcactus; }
 
-.footerindex {
-  color: #415816;
-  margin: 30px;
-  width: 50%; }
-
-.nosotros {
-  padding: 2rem;
-  color: #33b619; }
-
 .plantas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: center;
+  align-items: stretch;
+  gap: 1rem;
   padding: 2rem;
   color: #33b619; }
-
-h2 {
-  padding: 2rem;
-  color: #33b619;
-  text-decoration: bold; }
-
-main {
-  font-weight: 0; }
 
 .productos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 10vw 10vw 1fr;
-  grid-template-areas: "prod prod" "tipo1 tipo2" "fototipo1 fototipo2";
+  grid-template-rows: 10vw 1fr;
+  grid-template-areas: "tipo1 tipo2" "fototipo1 fototipo2";
   grid-gap: 1rem;
   align-items: center;
   justify-items: center; }
-  .productos h2 {
-    padding: 2rem;
-    color: #33b619; }
-  .productos .prod {
-    grid-area: prod; }
   .productos .tipo1 {
     grid-area: tipo1;
     background-image: linear-gradient(white 70%, #99e999);
     padding: 2rem; }
   .productos .fototipo1, .productos .fototipo2 {
     grid-area: fototipo1;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     align-items: center;
     object-fit: cover;
-    filter: blur(5px) grayscale(90%);
-    -webkit-filter: blur(5px) grayscale(90%); }
+    filter: grayscale(90%); }
     .productos .fototipo1:hover, .productos .fototipo2:hover {
       transition-duration: 1.5s;
-      filter: blur(0px) grayscale(0%);
-      -webkit-filter: blur(0px) grayscale(0%); }
+      filter: grayscale(0%); }
   .productos .tipo2 {
     grid-area: tipo2;
     background-image: linear-gradient(white 70%, #99e999);
@@ -167,5 +196,164 @@ main {
     grid-area: fototipo2; }
 
 .formulario {
-  padding: 2rem;
-  color: #33b619; }
+  max-width: 50%;
+  color: #51aa08; }
+  .formulario .col-sm-2 {
+    min-width: 20%; }
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 842px) {
+  /*Header*/
+  body {
+    background-color: #c4e79670;
+    background-image: none; }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    header nav .slogan {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      header nav .slogan .slogan__name h1 {
+        display: none; }
+      header nav .slogan .slogan__logo {
+        padding: 0.5rem; }
+    header nav ul {
+      margin-top: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: fit-content;
+      gap: 1rem; }
+      header nav ul li {
+        padding: 0; }
+        header nav ul li a {
+          text-decoration: none;
+          font-size: 14px;
+          color: #51aa08;
+          margin: 1px;
+          padding: 0.1rem;
+          border: 2px solid white;
+          background-color: white; }
+  /*Inicio*/
+  main {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem; }
+  #ppal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px;
+    grid-template-areas: "divtexto" "divcactus"; }
+    #ppal .divtexto {
+      grid-area: divtexto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+    #ppal .divcactus {
+      grid-area: divcactus; }
+  /*Tienda*/
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.2fr 0.2fr 1.2fr;
+    grid-template-areas: "tipo1"  "fototipo1"  "tipo2" "fototipo2";
+    grid-gap: 1rem;
+    align-items: center;
+    justify-items: center; }
+    .productos .tipo1, .productos .tipo2 {
+      padding: 1rem; }
+  /*Quienes somos*/
+  .nosotros {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden; }
+    .nosotros iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  /*Footer*/
+  footer {
+    display: flex;
+    margin-left: 0rem;
+    width: 100%;
+    padding: 0rem; }
+  .redes {
+    width: 250px; } }
+
+@media (min-width: 843px) and (max-width: 1070px) {
+  body {
+    background-color: #dde3e6;
+    background-size: 100;
+    /*Header*/
+    /*Inicio*/ }
+    body header nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center; }
+      body header nav .slogan {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch; }
+        body header nav .slogan .slogan__logo {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: stretch;
+          width: 132px;
+          height: 132px;
+          padding: 2rem; }
+      body header nav ul {
+        margin-right: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.2rem; }
+        body header nav ul li {
+          padding: 0; }
+          body header nav ul li a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #51aa08;
+            margin: 1px;
+            padding: 0.1rem;
+            border: 2px solid white;
+            background-color: white; }
+    body main {
+      width: 100%;
+      height: fit-content;
+      padding: 1rem; }
+  #ppal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 350px;
+    grid-template-areas: "divtexto divtexto . ." ". divcactus divcactus ."; }
+    #ppal .divtexto {
+      grid-area: divtexto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+    #ppal .divcactus {
+      grid-area: divcactus; }
+  /*Quienes somos*/
+  .nosotros iframe {
+    width: 500px;
+    height: 350px; } }

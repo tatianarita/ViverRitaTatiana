@@ -1,11 +1,4 @@
-.plantas {display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
+.plantas {@include flex (row, wrap, space-around, stretch);
+    gap: 1rem;
     padding: $spacing-medium;
     color: $secondary;}
-h2 {padding: $spacing-medium;
-font-size: map-get($font-sizes, $text-base);
-color: $secondary;
-text-decoration: bold;}

@@ -1,4 +1,64 @@
-footer {font-size: map-get($font-sizes, $text-small);
-    color: $alternative;
-    margin: 30px;
-    width: 50%;}
+.redes{
+    width: 400px;
+    margin: 0 20px;
+  }
+  
+  .hide-text{
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      display: block;
+  }
+  
+  .ease-all{
+      -webkit-transition: all 400ms ease-in-out;
+      -moz-transition: all 400ms ease-in-out;
+      -o-transition: all 400ms ease-in-out;
+      -ms-transition: all 400ms ease-in-out;
+      transition: all 400ms ease-in-out;
+  }
+  
+  /* Social Icons */
+  
+  .social{
+    height: 4.5rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .social li a{
+      float: left;
+      width: 40px;
+      height: 40px;
+      margin-right: 1rem;
+      text-align: center;
+      padding-top: 10px;
+      
+      -webkit-border-radius:20px;
+      -moz-border-radius:20px;
+      -o-border-radius:20px;
+      -ms-border-radius:20px;
+      border-radius:20px;
+      
+      /*background-color*/
+      -webkit-box-shadow: inset 0 0 0 40px rgb(51, 182, 25);
+      -moz-box-shadow: inset 0 0 0 40px rgb(51, 182, 25);
+      -o-box-shadow: inset 0 0 0 40px rgb(51, 182, 25);
+      -ms-box-shadow: inset 0 0 0 40px rgb(51, 182, 25);
+      box-shadow: inset 0 0 0 40px rgb(51, 182, 25);
+      
+      color: #fff;
+  }
+  
+  .social li a:hover{
+      -webkit-box-shadow: inset 0 0 0 3px rgb(51, 182, 25);
+      -moz-box-shadow: inset 0 0 0 3px rgb(51, 182, 25);
+      -o-box-shadow: inset 0 0 0 3px rgb(51, 182, 25);
+      -ms-box-shadow: inset 0 0 0 3px rgb(51, 182, 25);
+      box-shadow: inset 0 0 0 3px rgb(51, 182, 25);
+      
+      color: rgb(51, 182, 25);
+  }
+  

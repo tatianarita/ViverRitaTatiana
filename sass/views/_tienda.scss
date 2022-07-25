@@ -1,33 +1,27 @@
-main {font-weight: 0;}
 .productos {display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vw 10vw 1fr;
-    grid-template-areas: "prod prod"
+    grid-template-rows: 10vw 1fr;
+    grid-template-areas: 
     "tipo1 tipo2"
     "fototipo1 fototipo2";
     grid-gap: $spacing-small;
     align-items: center;
     justify-items: center;
-    h2{padding: $spacing-medium;
-        font-size: map-get($font-sizes, $text-title);
-        color: $secondary;}
-    .prod {grid-area: prod;}
     .tipo1 {grid-area: tipo1;
         font-size: map-get($font-sizes, $text-base);
         background-image: linear-gradient(white 70%,rgb(153, 233, 153));
         padding: $spacing-medium;}
     .fototipo1 {
         grid-area: fototipo1;
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
         align-items: center;
         object-fit: cover;
-        filter: blur(5px) grayscale(90%);
-        -webkit-filter: blur(5px) grayscale(90%);
+        filter: grayscale(90%);
         &:hover {
             transition-duration: 1.5s;
-            filter: blur(0px) grayscale(0%);
-            -webkit-filter: blur(0px) grayscale(0%);}}
+            filter: grayscale(0%);
+}}
     .tipo2 {grid-area: tipo2;
         font-size: map-get($font-sizes, $text-base);
         background-image: linear-gradient(white 70%,rgb(153, 233, 153));

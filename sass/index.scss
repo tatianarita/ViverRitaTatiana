@@ -1,9 +1,11 @@
 /* MISC */
 @import "misc/mixins";
-@import "misc/normalize";
 @import "misc/variables";
+@import "misc/normalize";
 
-/* PARTIALS */
+
+
+/*PARTIALS*/
 @import "partials/header";
 @import "partials/footer";
 
@@ -13,3 +15,6 @@
 @import "views/nuestrasplantas";
 @import "views/tienda";
 @import "views/contacto";
+
+/*MEDIA QUERIES*/ 
+@import "misc/mediaqueries";
