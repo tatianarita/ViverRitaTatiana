@@ -1,0 +1,119 @@
+@media screen and (max-width:842px){
+    /*Header*/ 
+    body {background-color: #c4e79670;
+        background-image: none;}
+    header{ nav {@include flex(column, wrap, center, center);
+            .slogan{@include flex (row, wrap, center, center);
+                .slogan__name h1 {display: none;}
+                .slogan__logo {padding: 0.5rem;}}
+        ul {
+            margin-top: 0.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: fit-content;
+            gap: 1rem;
+            li {padding: 0;
+                a {text-decoration: none;
+                font-size: 14px;
+                color: $text-color;
+                margin: 1px;
+                padding: 0.1rem;
+                border: 2px solid $base;
+                background-color: $base;}}}}}
+    /*Inicio*/  
+    main { width: 100%;
+        height: fit-content;
+        padding: $spacing-small;}
+    #ppal {display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px;
+        grid-template-areas: 
+        "divtexto"
+        "divcactus";
+        .divtexto{
+        grid-area: divtexto;
+        @include flex (row, wrap, center, center);
+        .texto{
+        font-size: map-get($font-sizes, $text-base);}}
+        .divcactus{
+        grid-area: divcactus;}}
+    /*Tienda*/ 
+    .productos {display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1.2fr 0.2fr 1.2fr;
+        grid-template-areas:  
+        "tipo1" 
+        "fototipo1" 
+        "tipo2"
+        "fototipo2";
+        grid-gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        .tipo1, .tipo2 {padding: $spacing-small;}}
+    /*Quienes somos*/ 
+    .nosotros {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        iframe {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }}
+    /*Footer*/ 
+    footer {
+        display: flex;
+        margin-left: 0rem;
+        width: 100%;
+        padding: 0rem;} 
+      .redes{
+        width: 250px;}
+    }
+@media (min-width:843px) and (max-width:1070px){
+        body {background-color: #dde3e6;
+            background-size: 100;
+        /*Header*/ 
+            header {
+                nav {@include flex (row, nowrap, space-between, center);
+                    .slogan {@include flex (row, wrap, center, stretch);
+                        .slogan__logo {@include flex (row, wrap, center, stretch);
+                            width: 132px;
+                            height: 132px;
+                            padding: 2rem;}}
+                ul { margin-right: 1rem;
+                    @include flex (row, nowrap, space-between, center);
+                    gap: 0.2rem;
+                    li {padding: 0;
+                        a {text-decoration: none;
+                        font-size: 14px;
+                        color: $text-color;
+                        margin: 1px;
+                        padding: 0.1rem;
+                        border: 2px solid $base;
+                        background-color: $base;}}}}}
+        /*Inicio*/  
+        main { width: 100%;
+            height: fit-content;
+            padding: $spacing-small;}}
+            #ppal {display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 150px 350px;
+                grid-template-areas: 
+                "divtexto divtexto . ."
+                ". divcactus divcactus .";
+                .divtexto{
+                grid-area: divtexto;
+                @include flex (row, wrap, center, center);
+                .texto{
+                font-size: map-get($font-sizes, $text-base);}}
+                .divcactus{
+                grid-area: divcactus;}}
+        /*Quienes somos*/ 
+        .nosotros iframe {width: 500px;
+        height: 350px;}
+}
+  
+
